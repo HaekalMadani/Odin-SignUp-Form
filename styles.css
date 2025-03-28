@@ -1,5 +1,8 @@
+
+
 body{
     display: flex;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*---------------left------------------------*/
@@ -60,3 +63,42 @@ img{
     margin: 50px 10px;
 }
 
+.form{
+
+    background-color: white;
+    padding: 20px 10px;
+    box-shadow: 0 5px 8px rgba(96, 96, 96, 0.5);
+}
+
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.placement{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input:invalid:focus {
+    outline-color: red;
+    box-shadow: 0 5px 8px rgba(96, 96, 96, 0.5);
+}
+
+input:valid:focus {
+    outline-color: green;
+    box-shadow: 0 5px 8px rgba(96, 96, 96, 0.5);
+}
+
+input:valid{
+    border: 1px solid green;
+}
